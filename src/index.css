@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Iransans;
+  src: url(/fonts/IRANSans/IRANSans.ttf);
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Iransans;
   line-height: 1.5;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
