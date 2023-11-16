@@ -1,0 +1,7 @@
+.landing-overlay {
+  background-image: url(../../assets/images/background_landing.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.3);
+}
