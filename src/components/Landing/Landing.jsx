@@ -1,5 +1,7 @@
 import React from "react";
 import "./Landing.css";
+import Typewriter from "typewriter-effect";
+// icons
 import searchIcon from "../../assets/icons/search.svg";
 import studentIcon from "../../assets/icons/student.svg";
 import courseIcon from "../../assets/icons/course.svg";
@@ -12,7 +14,13 @@ export default function Landing() {
       <div className="landing-container w-2/3 mx-auto flex flex-col z-20 text-mainWhite relative text-center p-24 gap-y-6">
         <div className="landing-header">
           <h1 className="text-3xl font-semibold">
-            ما به هر قیمتی دوره آموزشی تولید نمی کنیم !
+            <Typewriter
+              options={{
+                strings: ["ما به هر قیمتی دوره آموزشی تولید نمی کنیم !","سبزلرن - آکادمی خصوصی برنامه نویسی !"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h1>
           <p className="mt-1.5">
             با آکادمی سبزلرن، برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن.
@@ -27,7 +35,7 @@ export default function Landing() {
           <img
             src={searchIcon}
             alt=""
-            className="bg-mainGreen p-4 rounded-xl absolute left-2 top-2 transition-all hover:opacity-90"
+            className="bg-mainGreen p-4 rounded-xl absolute left-2 top-2 transition-all hover:opacity-90 cursor-pointer"
           />
         </div>
         <div className="landing-achivements flex justify-between mt-4">
