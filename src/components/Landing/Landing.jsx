@@ -16,7 +16,10 @@ export default function Landing() {
           <h1 className="text-3xl font-semibold">
             <Typewriter
               options={{
-                strings: ["ما به هر قیمتی دوره آموزشی تولید نمی کنیم !","سبزلرن - آکادمی خصوصی برنامه نویسی !"],
+                strings: [
+                  "ما به هر قیمتی دوره آموزشی تولید نمی کنیم !",
+                  "سبزلرن - آکادمی خصوصی برنامه نویسی !",
+                ],
                 autoStart: true,
                 loop: true,
               }}
