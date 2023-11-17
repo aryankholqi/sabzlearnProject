@@ -15,8 +15,8 @@ export default function LastCourses() {
             btnText: "تمامی دوره ها",
           }}
         />
-        <div className="course-content mt-2">
-          <div className="container grid grid-cols-3 gap-4">
+        <div className="course-content mt-4">
+          <div className="grid grid-cols-3 gap-4">
             {lastCoursesItems.map((course, index) => (
               <CourseBox key={index} course={course} />
             ))}

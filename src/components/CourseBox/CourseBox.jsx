@@ -18,7 +18,7 @@ export default function CourseBox({ course }) {
           <span className="flex items-center gap-x-1 text-xs flex-1">
             <img src={teacherIcon} alt="" /> {teacher}
           </span>
-          <Rating value={4} dir="ltr" size="small"/>
+          <Rating value={4} dir="ltr" size="small" />
         </div>
         <div className="flex justify-between items-center">
           <span className="flex items-center gap-x-1 text-xs flex-1">
@@ -27,6 +27,10 @@ export default function CourseBox({ course }) {
           <span>{price}</span>
         </div>
       </div>
+      <hr />
+      <button className="w-full p-2 text-mainGreen">
+        مشاهده اطلاعات{" "}
+      </button>
     </div>
   );
 }
