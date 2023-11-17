@@ -1,0 +1,9 @@
+.section-header-right::before {
+  content: "";
+  background-color: #65cb79;
+  width: 5px;
+  height: 50px;
+  position: absolute;
+  right: -10px;
+  transform: rotate(5deg);
+}

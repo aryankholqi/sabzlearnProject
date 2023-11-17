@@ -13,3 +13,8 @@
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
 }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
