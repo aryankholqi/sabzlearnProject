@@ -1,0 +1,12 @@
+.footer-title::before {
+  content: " ";
+  background-color: #65cb79;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  z-index: 1;
+  right: 10px;
+  opacity: 0.4;
+}
