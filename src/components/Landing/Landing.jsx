@@ -44,17 +44,23 @@ export default function Landing() {
         </div>
         <div className="landing-achivements flex justify-between mt-4">
           <div className="landing-students flex flex-col items-center">
-            <img src={studentIcon} alt="" width={50} height={50} />
+            <div className="h-14">
+              <img src={studentIcon} alt="" className="h-full"/>
+            </div>
             <CountUp end={3102} duration={2} className="mt-4" />
             <p>کاربر توی سبزلرن ثبت نام کردن</p>
           </div>
           <div className="landing-courses flex flex-col items-center">
-            <img src={courseIcon} alt="" width={50} height={50} />
+            <div className="h-14">
+              <img src={courseIcon} alt="" className="h-full" />
+            </div>
             <CountUp end={40} duration={2} className="mt-4" />
             <p>دوره آموزشی داریم</p>
           </div>
           <div className="landing-courses flex flex-col items-center">
-            <img src={clockIcon} alt="" width={50} height={50} />
+            <div className="h-14">
+              <img src={clockIcon} alt="" className="h-full" />
+            </div>
             <CountUp end={3302} duration={2} className="mt-4" />
             <p>دقیقه آموزش تولید کردیم</p>
           </div>
