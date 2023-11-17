@@ -7,3 +7,4 @@ This project is developing by me inspired from https://sabzlearn.ir/course/react
 - react-router-dom
 - typewriter-effect
 - Material-UI
+- react-countup
