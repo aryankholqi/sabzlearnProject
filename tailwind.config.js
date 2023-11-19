@@ -7,6 +7,7 @@ export default {
         mainGreen: "#65cb79",
         mainGray: "#e3e7ec",
         mainWhite: "#f9f9f9",
+        mainBlue: "#2a48d2",
       },
     },
   },
