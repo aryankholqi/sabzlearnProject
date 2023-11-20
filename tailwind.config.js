@@ -8,6 +8,7 @@ export default {
         mainGray: "#e3e7ec",
         mainWhite: "#f9f9f9",
         mainBlue: "#2a48d2",
+        secondaryGreen: "#d8eed4",
       },
     },
   },
