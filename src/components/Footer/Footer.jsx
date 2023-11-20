@@ -6,7 +6,7 @@ import FooterItem from "../FooterItem/FooterItem";
 export default function Footer() {
   return (
     <div className="footer mt-12">
-      <div className="footer-container relative container bg-mainGray grid grid-cols-3 gap-x-3 p-6 rounded-lg">
+      <div className="footer-container relative container bg-mainGray grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 rounded-lg">
         {footerItems.map((item, index) => (
           <FooterItem key={index} item={item} />
         ))}

@@ -5,7 +5,7 @@ export default function ArticleBox({ article }) {
   const { title, description, img } = article;
   return (
     <div className="article-box shadow-xl rounded-lg">
-      <div className="article-img w-[90&] mx-auto h-72">
+      <div className="article-img w-full mx-auto h-72">
         <img src={img} alt="" className="h-full w-full" />
       </div>
       <div className="article-content w-[90%] mx-auto">

@@ -9,3 +9,43 @@
   left: 35%;
   z-index: -1;
 }
+
+@media only screen and (max-width: 1536px) {
+  body {
+    /* background-color: lightblue; */
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .footer-container::after {
+    width: 350px;
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-container::after {
+    width: 300px;
+    left: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container::after {
+    width: 250px;
+    left: 25%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .footer-container::after {
+    width: 230px;
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-container::after {
+    width: 190px;
+    left: 25%;
+  }
+}

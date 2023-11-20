@@ -15,7 +15,7 @@ export default function LastArticles() {
             btnText: "تمامی مقاله ها",
           }}
         />
-        <div className="article-content grid grid-cols-3 gap-x-4 mt-4">
+        <div className="article-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           {lastArticleItems.map((article, index) => (
             <ArticleBox key={index} article={article} />
           ))}

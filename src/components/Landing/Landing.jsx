@@ -12,7 +12,7 @@ export default function Landing() {
   return (
     <section className="landing h-[500px] relative">
       <div className="landing-overlay absolute w-full h-full z-10"></div>
-      <div className="landing-container w-2/3 mx-auto flex flex-col z-20 text-mainWhite relative text-center p-24 gap-y-6">
+      <div className="landing-container w-full lg:w-2/3 mx-auto flex flex-col z-20 text-mainWhite relative text-center p-6 lg:p-24 gap-y-6">
         <div className="landing-header">
           <h1 className="text-3xl font-semibold">
             <Typewriter
@@ -33,7 +33,7 @@ export default function Landing() {
         <div className="landing-search relative w-4/5 mx-auto">
           <input
             type="search"
-            className="h-16 rounded-lg w-full mx-auto px-4 outline-none text-black"
+            className="h-16 rounded-lg w-full mx-auto px-4 outline-none text-black text-xs lg:text-base"
             placeholder="چه چیزی دوست داری یاد بگیری ..."
           />
           <img
@@ -42,27 +42,27 @@ export default function Landing() {
             className="bg-mainGreen p-4 rounded-xl absolute left-2 top-2 transition-all hover:opacity-90 cursor-pointer"
           />
         </div>
-        <div className="landing-achivements flex justify-between mt-4">
+        <div className="landing-achivements flex justify-between mt-4 gap-x-4">
           <div className="landing-students flex flex-col items-center">
-            <div className="h-14">
-              <img src={studentIcon} alt="" className="h-full"/>
+            <div className="h-8 lg:h-14">
+              <img src={studentIcon} alt="" className="h-full" />
             </div>
             <CountUp end={3102} duration={2} className="mt-4" />
-            <p>کاربر توی سبزلرن ثبت نام کردن</p>
+            <p className="text-xs">کاربر توی سبزلرن ثبت نام کردن</p>
           </div>
           <div className="landing-courses flex flex-col items-center">
-            <div className="h-14">
+            <div className="h-8 lg:h-14">
               <img src={courseIcon} alt="" className="h-full" />
             </div>
             <CountUp end={40} duration={2} className="mt-4" />
-            <p>دوره آموزشی داریم</p>
+            <p className="text-xs">دوره آموزشی داریم</p>
           </div>
           <div className="landing-courses flex flex-col items-center">
-            <div className="h-14">
+            <div className="h-8 lg:h-14">
               <img src={clockIcon} alt="" className="h-full" />
             </div>
             <CountUp end={3302} duration={2} className="mt-4" />
-            <p>دقیقه آموزش تولید کردیم</p>
+            <p className="text-xs">دقیقه آموزش تولید کردیم</p>
           </div>
         </div>
       </div>

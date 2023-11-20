@@ -16,7 +16,7 @@ export default function Category() {
       <Topbar />
       <Navbar />
       <div className="container">
-        <div className="category-tools shadow-xl p-4 rounded-lg flex items-center justify-between my-6">
+        <div className="category-tools shadow-xl p-4 rounded-lg flex items-center justify-between flex-wrap gap-4 my-6">
           <div className="category-tools-right flex items-center gap-x-2">
             <img src={gridIcon} alt="" className="bg-mainBlue p-3 rounded-md" />
             <img
@@ -46,7 +46,7 @@ export default function Category() {
             />
           </div>
         </div>
-        <div className="category-courses grid grid-cols-3 gap-4">
+        <div className="category-courses grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {lastCoursesItems.slice(0, 3).map((course, index) => (
             <CourseBox course={course} key={index} />
           ))}

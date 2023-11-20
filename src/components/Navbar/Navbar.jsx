@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="navbar flex justify-between items-center px-6 py-4">
       <div className="navbar-right flex items-center gap-x-2 flex-1">
         <img src={sabzlearnLogo} alt="" width={100} />
-        <ul className="nav-menu text-sm list-none flex items-center relative gap-x-2">
+        <ul className="nav-menu text-sm list-none hidden lg:flex items-center relative gap-x-2">
           <li className="nav-menu-item transition-all hover:text-mainGreen">
             <Link to={"#"} className="p-4 text-center">
               صفحه اصلی
@@ -193,7 +193,10 @@ export default function Navbar() {
             </ul>
           </li>
           <li className="nav-menu-item p-4">
-            <Link to={"#"} className="p-4 text-center transition-all hover:text-mainGreen">
+            <Link
+              to={"#"}
+              className="p-4 text-center transition-all hover:text-mainGreen"
+            >
               مهارت های نرم
             </Link>
           </li>
