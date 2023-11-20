@@ -7,19 +7,19 @@ export default function Pagination() {
   const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
-    <div className="pagination flex items-center justify-center gap-x-2 mt-8">
+    <div className="pagination flex items-stretch justify-center gap-x-2 mt-8">
       <img
         src={rightArrowIcon}
         alt=""
-        className="bg-mainGreen p-3 rounded-md transition-all hover:opacity-90 cursor-pointer"
+        className="bg-mainGreen py-2 px-3 rounded-md transition-all hover:opacity-90 cursor-pointer"
       />
       {Array.from({ length: array.length / 3 }, (_, index) => (
-        <button className="bg-mainGray p-3 rounded-md transition-all hover:opacity-80">{index + 1}</button>
+        <button className="bg-mainGray py-2 px-3 rounded-md transition-all hover:opacity-80">{index + 1}</button>
       ))}
       <img
         src={leftArrowIcon}
         alt=""
-        className="bg-mainGreen p-3 rounded-md transition-all hover:opacity-90 cursor-pointer"
+        className="bg-mainGreen py-2 px-3 rounded-md transition-all hover:opacity-90 cursor-pointer"
       />
     </div>
   );

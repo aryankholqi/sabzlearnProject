@@ -18,14 +18,14 @@ export default function Navbar() {
     <nav className="navbar flex justify-between items-center px-6 py-4">
       <div className="navbar-right flex items-center gap-x-2 flex-1">
         <img src={sabzlearnLogo} alt="" width={100} />
-        <ul className="nav-menu text-sm list-none flex items-center relative">
+        <ul className="nav-menu text-sm list-none flex items-center relative gap-x-2">
           <li className="nav-menu-item transition-all hover:text-mainGreen">
             <Link to={"#"} className="p-4 text-center">
               صفحه اصلی
             </Link>
           </li>
           <li
-            className="nav-menu-item"
+            className="nav-menu-item p-4"
             onMouseEnter={() =>
               setisSubMenuOpen((prevState) => ({
                 ...prevState,
@@ -41,12 +41,12 @@ export default function Navbar() {
           >
             <Link
               to={"#"}
-              className="flex items-center gap-x-2 p-4 text-center transition-all hover:text-mainGreen"
+              className="flex items-center gap-x-2 text-center transition-all hover:text-mainGreen"
             >
               فرانت اند <img src={arrowIcon} />
             </Link>
             <ul
-              className={`bg-mainWhite z-40 w-[200px] absolute rounded-lg ${
+              className={`bg-mainWhite z-40 w-[200px] absolute top-12 rounded-lg ${
                 isSubMenuOpen.frontEnd ? "block" : "hidden"
               }`}
             >
@@ -67,7 +67,7 @@ export default function Navbar() {
             </ul>
           </li>
           <li
-            className="nav-menu-item"
+            className="nav-menu-item p-4"
             onMouseEnter={() =>
               setisSubMenuOpen((prevState) => ({
                 ...prevState,
@@ -83,12 +83,12 @@ export default function Navbar() {
           >
             <Link
               to={"#"}
-              className="flex items-center gap-x-2 p-4 text-center transition-all hover:text-mainGreen"
+              className="flex items-center gap-x-2 text-center transition-all hover:text-mainGreen"
             >
               امنیت <img src={arrowIcon} />
             </Link>
             <ul
-              className={`bg-mainWhite z-40 w-[200px] absolute rounded-lg  ${
+              className={`bg-mainWhite z-40 w-[200px] absolute top-12 rounded-lg  ${
                 isSubMenuOpen.security ? "block" : "hidden"
               }`}
             >
@@ -109,7 +109,7 @@ export default function Navbar() {
             </ul>
           </li>
           <li
-            className="nav-menu-item"
+            className="nav-menu-item p-4"
             onMouseEnter={() =>
               setisSubMenuOpen((prevState) => ({
                 ...prevState,
@@ -125,12 +125,12 @@ export default function Navbar() {
           >
             <Link
               to={"#"}
-              className="flex items-center gap-x-2 p-4 text-center transition-all hover:text-mainGreen"
+              className="flex items-center gap-x-2 text-center transition-all hover:text-mainGreen"
             >
               مقالات <img src={arrowIcon} />
             </Link>
             <ul
-              className={`bg-mainWhite z-40 w-[200px] absolute rounded-lg  ${
+              className={`bg-mainWhite z-40 w-[200px] absolute top-12 rounded-lg  ${
                 isSubMenuOpen.articles ? "block" : "hidden"
               }`}
             >
@@ -151,7 +151,7 @@ export default function Navbar() {
             </ul>
           </li>
           <li
-            className="nav-menu-item"
+            className="nav-menu-item p-4"
             onMouseEnter={() =>
               setisSubMenuOpen((prevState) => ({
                 ...prevState,
@@ -167,12 +167,12 @@ export default function Navbar() {
           >
             <Link
               to={"#"}
-              className="flex items-center gap-x-2 p-4 text-center transition-all hover:text-mainGreen"
+              className="flex items-center gap-x-2 text-center transition-all hover:text-mainGreen"
             >
               پایتون <img src={arrowIcon} />
             </Link>
             <ul
-              className={`bg-mainWhite z-40 w-[200px] absolute rounded-lg  ${
+              className={`bg-mainWhite z-40 w-[200px] absolute top-12 rounded-lg  ${
                 isSubMenuOpen.python ? "block" : "hidden"
               }`}
             >
@@ -192,8 +192,8 @@ export default function Navbar() {
               </li>
             </ul>
           </li>
-          <li className="nav-menu-item transition-all hover:text-mainGreen">
-            <Link to={"#"} className="p-4 text-center">
+          <li className="nav-menu-item p-4">
+            <Link to={"#"} className="p-4 text-center transition-all hover:text-mainGreen">
               مهارت های نرم
             </Link>
           </li>
